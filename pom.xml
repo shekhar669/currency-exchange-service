@@ -3,22 +3,32 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.nos.microservices</groupId>
+	<artifactId>currency-exchange-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>currency-exchange-service</name>
+	<description>Demo project for Spring Boot</description>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.0.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath />
 	</parent>
-	<groupId>com.nos.microservices</groupId>
-	<artifactId>currency-exchange-service-${build.number}</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>currency-exchange-service</name>
-	<description>Demo project for Spring Boot</description>
+
+
 
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR4</spring-cloud.version>
 	</properties>
+
+	<scm>
+		<url>https://github.com/shekhar669/currency-exchange-service.git</url> <!-- URL HTTP de clone do projeto -->
+		<connection>scm:git:https://github.com/shekhar669/currency-exchange-service.git</connection> <!-- URL HTTP de clone do projeto -->
+		<developerConnection>scm:git:https://github.com/shekhar669/currency-exchange-service.git</developerConnection> <!-- URL HTTP de clone do projeto -->
+		<tag>@{project.version}</tag>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -38,7 +48,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
-		 	<version>1.4.4.RELEASE</version> 
+			<version>1.4.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -48,11 +58,8 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-			<version>1.4.4.RELEASE</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-eureka</artifactId> 
+			<version>1.4.4.RELEASE</version> </dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -61,7 +68,7 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 		</dependency>
-		
+
 		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-sleuth</artifactId> 
 			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-sleuth-zipkin</artifactId> 
 			</dependency> -->
@@ -101,6 +108,19 @@
 		</dependency>
 
 	</dependencies>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Laptop-SSaha-snapshots</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot</url>
+		</snapshotRepository>
+		<repository>
+			<id>central</id>
+			<name>Laptop-SSaha-releases</name>
+			<url>http://localhost:8081/artifactory/libs-release</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
