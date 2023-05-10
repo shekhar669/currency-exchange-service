@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.optum.impactpro</groupId>
 	<artifactId>currency-exchange-service</artifactId>
-	<version>1.0.24</version>
+	<version>1.0.25-SNAPSHOT</version>
 	<name>currency-exchange-service</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
@@ -24,7 +24,7 @@
 		<url>https://github.com/shekhar669/currency-exchange-service.git</url> <!-- URL HTTP de clone do projeto -->
 		<connection>scm:git:https://github.com/shekhar669/currency-exchange-service.git</connection> <!-- URL HTTP de clone do projeto -->
 		<developerConnection>scm:git:https://github.com/shekhar669/currency-exchange-service.git</developerConnection> <!-- URL HTTP de clone do projeto -->
-		<tag>currency-exchange-service-1.0.24</tag>
+		<tag>currency-exchange-service-1.0.21</tag>
 	</scm>
 
 	<dependencies>
