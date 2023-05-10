@@ -5,6 +5,7 @@
 	<artifactId>currency-exchange-service</artifactId>
 	<version>1.0.8-SNAPSHOT</version>
 	<name>currency-exchange-service</name>
+	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
