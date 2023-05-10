@@ -110,13 +110,13 @@
 
 	<distributionManagement>
 		<snapshotRepository>
-			<id>UHG-Snapshots</id>
+			<id>jfrog-repo</id>
 			<name>Laptop-SSaha-snapshots</name>
 			<!-- <url>http://localhost:8081/artifactory/libs-snapshot</url> -->
 			<url>https://repo1.uhc.com/artifactory/UHG-Snapshots</url>
 		</snapshotRepository>
 		<repository>
-			<id>UHG-Releases</id>
+			<id>jfrog-repo</id>
 			<name>Laptop-SSaha-releases</name>
 			<!-- <url>http://localhost:8081/artifactory/libs-release</url> -->
 			<url>https://repo1.uhc.com/ui/repos/tree/General/UHG-Releases</url>
