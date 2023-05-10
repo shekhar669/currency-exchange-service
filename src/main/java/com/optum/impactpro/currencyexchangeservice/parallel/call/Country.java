@@ -1,4 +1,4 @@
-package com.nos.microservices.currencyexchangeservice.parallel.call;
+package com.optum.impactpro.currencyexchangeservice.parallel.call;
 
 public class Country {
     private String name;

@@ -1,4 +1,4 @@
-package com.nos.microservices.currencyexchangeservice;
+package com.optum.impactpro.currencyexchangeservice;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
