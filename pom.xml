@@ -119,7 +119,7 @@
 			<id>jfrog-repo</id>
 			<name>Laptop-SSaha-releases</name>
 			<!-- <url>http://localhost:8081/artifactory/libs-release</url> -->
-			<url>https://repo1.uhc.com:443/artifactory/libs-releases</url>
+			<url>https://repo1.uhc.com/artifactory/UHG-Releases</url>
 		</repository>
 	</distributionManagement>
 
