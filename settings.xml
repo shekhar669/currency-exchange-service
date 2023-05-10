@@ -13,8 +13,8 @@
 	<servers>
 		<server>
 			<username>svn_impactpro</username>
-			<password>AP4rzWnnwvtGd3eVNTHR7sANPpZ</password> <!-- Pass code for SVN_IMPACTPRO Account will be shared offline -->
-			<id>jfrog-repo</id>
+      <password>AP4rzWnnwvtGd3eVNTHR7sANPpZ</password>  <!-- Pass code for SVN_IMPACTPRO Account will be shared offline -->
+			<id>snapshots</id>
 		</server>
 	</servers>
 
@@ -47,7 +47,7 @@
 				</repository>
 				<repository>
 					<id>UHG-Releases</id>
-					<url>https://repo1.uhc.com/artifactory/UHG-Releases</url>
+					<url>https://repo1.uhc.com/ui/repos/tree/General/UHG-Releases</url>
 					<releases><enabled>true</enabled></releases>
 					<snapshots><enabled>false</enabled></snapshots>
 				</repository>
@@ -55,7 +55,7 @@
 		</profile>
 	</profiles>
 	<activeProfiles>
-		<activeProfile>optum-artifactory-release</activeProfile>
+		<activeProfile>optum-artifactory-snapshots</activeProfile>
 	</activeProfiles>
 
 </settings>
