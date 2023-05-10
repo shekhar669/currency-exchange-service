@@ -1,4 +1,4 @@
-package com.nos.microservices.currencyexchangeservice;
+package com.optum.impactpro.currencyexchangeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

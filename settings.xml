@@ -1,0 +1,61 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          https://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<mirrors>
+		<mirror>
+			<id>artifactory</id>
+			<mirrorOf>*</mirrorOf>
+			<url>https://repo1.uhc.com/artifactory/maven-repo</url>
+		</mirror>
+	</mirrors>
+
+	<servers>
+		<server>
+			<username>svn_impactpro</username>
+      <password>AP4rzWnnwvtGd3eVNTHR7sANPpZ</password>  <!-- Pass code for SVN_IMPACTPRO Account will be shared offline -->
+			<id>snapshots</id>
+		</server>
+	</servers>
+
+	<profiles>
+		<profile>
+			<id>optum-artifactory-snapshots</id>
+			<repositories>
+				<repository>
+					<id>uhc-maven</id>
+					<url>https://repo1.uhc.com/artifactory/maven-repo</url>
+					<releases><enabled>true</enabled></releases>
+					<snapshots><enabled>true</enabled></snapshots>
+				</repository>
+				<repository>
+					<id>UHG-Snapshots</id>
+					<url>https://repo1.uhc.com/artifactory/UHG-Snapshots</url>
+					<releases><enabled>false</enabled></releases>
+					<snapshots><enabled>true</enabled></snapshots>
+				</repository>
+			</repositories>
+		</profile>
+		<profile>
+			<id>optum-artifactory-release</id>
+			<repositories>
+				<repository>
+					<id>uhc-maven</id>
+					<url>https://repo1.uhc.com/artifactory/maven-repo</url>
+					<releases><enabled>false</enabled></releases>
+					<snapshots><enabled>true</enabled></snapshots>
+				</repository>
+				<repository>
+					<id>UHG-Releases</id>
+					<url>https://repo1.uhc.com/ui/repos/tree/General/UHG-Releases</url>
+					<releases><enabled>true</enabled></releases>
+					<snapshots><enabled>false</enabled></snapshots>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>optum-artifactory-snapshots</activeProfile>
+	</activeProfiles>
+
+</settings>

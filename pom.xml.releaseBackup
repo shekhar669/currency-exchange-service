@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.optum.impactpro</groupId>
 	<artifactId>currency-exchange-service</artifactId>
-	<version>1.0.10-SNAPSHOT</version>
+	<version>1.0.20-SNAPSHOT</version>
 	<name>currency-exchange-service</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
@@ -26,7 +26,7 @@
 		<url>https://github.com/shekhar669/currency-exchange-service.git</url> <!-- URL HTTP de clone do projeto -->
 		<connection>scm:git:https://github.com/shekhar669/currency-exchange-service.git</connection> <!-- URL HTTP de clone do projeto -->
 		<developerConnection>scm:git:https://github.com/shekhar669/currency-exchange-service.git</developerConnection> <!-- URL HTTP de clone do projeto -->
-		<tag>currency-exchange-service-1.0.10</tag>
+		<tag>currency-exchange-service-1.0.3</tag>
 	</scm>
 
 	<dependencies>
@@ -108,50 +108,20 @@
 
 	</dependencies>
 
-	<!--<distributionManagement>
+	<distributionManagement>
 		<snapshotRepository>
 			<id>jfrog-repo</id>
 			<name>UHG-Snapshots</name>
-			 <url>http://localhost:8081/artifactory/libs-snapshot</url>
+			<!-- <url>http://localhost:8081/artifactory/libs-snapshot</url> -->
 			<url>https://repo1.uhc.com/artifactory/UHG-Snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>jfrog-repo</id>
 			<name>UHG-Releases</name>
-			<url>http://localhost:8081/artifactory/libs-release</url> 
+			<!-- <url>http://localhost:8081/artifactory/libs-release</url> -->
 			<url>https://repo1.uhc.com/artifactory/UHG-Releases</url>
 		</repository>
-	</distributionManagement>-->
-	
-	<repositories>
-        <repository>
-            <id>Optum</id>
-            <url>https://repo1.uhc.com/artifactory/maven-repo/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-        <repository>
-			<id>uhc</id>
-			<name>uhc-snapshot</name>
-			<url>https://repo1.uhc.com/artifactory/UHG-Snapshots/</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-    </repositories>
-	
-	 <distributionManagement>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>repo1.uhc.com-snapshots</name>
-            <url>https://repo1.uhc.com:443/artifactory/UHG-Snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
