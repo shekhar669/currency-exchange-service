@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.optum.impactpro</groupId>
 	<artifactId>currency-exchange-service</artifactId>
-	<version>1.0.26-SNAPSHOT</version>
+	<version>1.0.25-SNAPSHOT</version>
 	<name>currency-exchange-service</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
@@ -139,14 +139,12 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>libs-snapshot</name>
-            <!-- <url>http://localhost:8081/artifactory/libs-snapshot</url> -->
-            <url>https://repo1.uhc.com:443/artifactory/UHG-Snapshots</url>
+            <url>http://localhost:8081/artifactory/libs-snapshot</url>
         </snapshotRepository>
         <repository>
             <id>snapshots</id>
             <name>libs-release</name>
-            <!-- <url>http://localhost:8081/artifactory/libs-release</url> -->
-           <url>https://repo1.uhc.com/artifactory/UHG-Releases</url>
+            <url>http://localhost:8081/artifactory/libs-release</url>
         </repository>
     </distributionManagement>
 
