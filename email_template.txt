@@ -4,7 +4,7 @@ Hello,
 
 This is an automated message to inform you about the status of the build.
 ${myVariable2}
-env.FILE_PATH
+${FILE_PATH}
 Job Name: ${JOB_NAME}
 Build Number: ${BUILD_NUMBER}
 Status: ${BUILD_STATUS}
