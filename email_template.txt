@@ -9,7 +9,7 @@ ${FILE_PATH}
 Job Name: ${JOB_NAME}
 Build Number: ${BUILD_NUMBER}
 Status: ${BUILD_STATUS}
-Commit Message: ${DEFAULT_CHANGELOG}
+Commit Message: $DEFAULT_CHANGELOG
 Changes:
 ${CHANGES, showPaths=true, format="%a: %r %p"}
 
