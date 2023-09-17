@@ -1,0 +1,16 @@
+Subject: Build Report for ${JOB_NAME} - Build #${BUILD_NUMBER}
+
+Hello,
+
+This is an automated message to inform you about the status of the build.
+
+Job Name: ${JOB_NAME}
+Build Number: ${BUILD_NUMBER}
+Status: ${BUILD_STATUS}
+Commit Message: ${COMMIT_MESSAGE}
+Changes:
+${CHANGES, showPaths=true, format="%a: %r %p"}
+
+Thank you,
+Jenkins
+
