@@ -3,8 +3,8 @@ Subject: Build Report for ${JOB_NAME} - Build #${BUILD_NUMBER}
 Hello,
 
 This is an automated message to inform you about the status of the build.
-${env.EMAIL_TO}
-${env.EMAIL_SUBJECT}
+${EMAIL_TO}
+${EMAIL_SUBJECT}
 Job Name: ${JOB_NAME}
 Build Number: ${BUILD_NUMBER}
 Status: ${BUILD_STATUS}
