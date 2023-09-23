@@ -1,5 +1,5 @@
 # Define the network drive and path
-$networkDrive = "Z"
+$networkDrive = "Z:"
 $networkPath = "\\wn000106946\IMPACTPRO_BUILDS"
 
 # Map the network drive
