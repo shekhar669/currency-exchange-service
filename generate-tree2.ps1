@@ -1,5 +1,5 @@
 # Define the network drive and path
-
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $networkPath = "\\wn000106946\IMPACTPRO_BUILDS"
 subst Z: $networkPath
 
