@@ -1,4 +1,4 @@
-$folderPath = "\\wn000106946\IMPACTPRO_BUILDS"
+$folderPath = "\\x\IMPACTPRO_BUILDS"
 
 # Execute the tree command
 $treeOutput = Invoke-Expression "tree $folderPath"
