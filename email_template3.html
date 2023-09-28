@@ -1,0 +1,25 @@
+<%
+def fieldPresent = true // Set this value based on your condition
+%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Template</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <% if (fieldPresent) { %>
+            <tr>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 3</td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
